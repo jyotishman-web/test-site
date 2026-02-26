@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>My Games Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
 
-<h1>My Image Test</h1>
+<h1>🎮 My Games Portal</h1>
 
-<img src="test/game.jpg" width="200">
+<div id="gameList"></div>
+
+<script src="data/games.js"></script>
+
+<script>
+const list = document.getElementById("gameList");
+
+GAMES.forEach(g => {
+  list.innerHTML += `
+    <div class="card">
+      <a href="${g.page}">
+        <img src="${g.thumb}" width="200">
+        <h3>${g.name}</h3>
+      </a>
+    </div>
+  `;
+});
+</script>
 
 </body>
 </html>
