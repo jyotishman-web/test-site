@@ -2,7 +2,7 @@ const GAMES = [
   {
     name: "Car Game",
     page: "games/car.html",
-    thumb: "assets/images/car.png"
+    thumb: "assets/images/car.jpg"
   },
   {
     name: "Snake Game",
