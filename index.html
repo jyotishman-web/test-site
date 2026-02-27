@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Games Portal</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Game Central</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>🎮 My Games Portal</h1>
+<header>
+  <h1>GAME CENTRAL</h1>
+</header>
 
-<div id="gameList"></div>
+<div class="container">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h3>Categories</h3>
+    <ul>
+      <li>Action</li>
+      <li>Puzzle</li>
+      <li>Racing</li>
+      <li>Shooting</li>
+      <li>Sports</li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+
+    <h2>Featured Games</h2>
+    <div id="featured" class="game-grid"></div>
+
+    <h2>Popular Games</h2>
+    <div id="popular" class="game-grid"></div>
+
+    <h2>New Games</h2>
+    <div id="new" class="game-grid"></div>
+
+  </main>
+
+</div>
 
 <script src="data/games.js"></script>
-
-<script>
-const list = document.getElementById("gameList");
-
-GAMES.forEach(g => {
-  list.innerHTML += `
-    <div class="card">
-      <a href="${g.page}">
-        <img src="${g.thumb}" width="200">
-        <h3>${g.name}</h3>
-      </a>
-    </div>
-  `;
-});
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
