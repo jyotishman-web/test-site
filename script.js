@@ -1,12 +1,12 @@
-games.forEach(game => {
+const featured = document.getElementById("featured");
 
-  const card = `
-    <div class="game-card">
-      <img src="${game.thumb}">
-      <p>${game.title}</p>
+GAMES.forEach(game => {
+  featured.innerHTML += `
+    <div class="card">
+      <a href="${game.page}">
+        <img src="${game.thumb}">
+        <h3>${game.name}</h3>
+      </a>
     </div>
   `;
-
-  document.getElementById(game.category).innerHTML += card;
-
 });
