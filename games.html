@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Game Central</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">GAME CENTRAL</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="index.html#categories">Categories</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="games-header">
+            <h1>All Games</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search games..." onkeyup="searchGames()">
+                <select id="categoryFilter" onchange="filterGames()">
+                    <option value="all">All Categories</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="all-games">
+            <div class="games-grid" id="allGamesList">
+                <!-- All games will be loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Game Central. All rights reserved.</p>
+    </footer>
+
+    <script src="js/games.js"></script>
+</body>
+</html>
