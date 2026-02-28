@@ -1,55 +1,67 @@
 body {
   margin: 0;
-  font-family: Arial;
-  background: #0d1b2a;
+  font-family: Arial, sans-serif;
+  background: #0b1c2c;
   color: white;
 }
 
-header {
-  background: #1b263b;
-  padding: 15px;
+/* HEADER */
+h1 {
   text-align: center;
+  padding: 15px;
+  background: #12263a;
+  margin: 0;
 }
 
+/* LAYOUT */
 .container {
   display: flex;
 }
 
+/* SIDEBAR */
 .sidebar {
   width: 200px;
-  background: #1b263b;
+  background: #102437;
   padding: 15px;
 }
 
-.sidebar ul {
-  list-style: none;
-  padding: 0;
+.sidebar h3 {
+  margin-top: 0;
 }
 
-.sidebar li {
-  padding: 8px 0;
-}
-
-main {
+/* MAIN */
+.main {
   flex: 1;
-  padding: 20px;
+  padding: 15px;
 }
 
+/* GAME GRID */
 .game-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: 15px;
-  flex-wrap: wrap;
 }
 
-.game-card {
-  background: #1b263b;
-  padding: 10px;
+/* GAME CARD */
+.card {
+  background: #142c44;
   border-radius: 10px;
-  width: 150px;
+  overflow: hidden;
   text-align: center;
+  transition: 0.3s;
 }
 
-.game-card img {
+.card img {
   width: 100%;
-  border-radius: 8px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 14px;
+  padding: 5px;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
