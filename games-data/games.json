@@ -1,0 +1,44 @@
+{
+    "categories": [
+        "Action", "Puzzle", "Strategy", "Sports", "Arcade", 
+        "Racing", "Adventure", "Shooter", "Fighting", "Platformer"
+    ],
+    "games": [
+        {
+            "id": 1,
+            "title": "Space Invaders",
+            "description": "Classic arcade shooter game. Defend Earth from alien invasion!",
+            "image": "images/space-invaders.jpg",
+            "category": "Arcade",
+            "url": "https://example.com/play/space-invaders",
+            "featured": true
+        },
+        {
+            "id": 2,
+            "title": "Chess Master",
+            "description": "Challenge yourself with this classic strategy game",
+            "image": "images/chess.jpg",
+            "category": "Strategy",
+            "url": "https://example.com/play/chess",
+            "featured": true
+        },
+        {
+            "id": 3,
+            "title": "Speed Racer",
+            "description": "High-speed racing game with amazing graphics",
+            "image": "images/racing.jpg",
+            "category": "Sports",
+            "url": "https://example.com/play/racing",
+            "featured": false
+        },
+        {
+            "id": 4,
+            "title": "Word Puzzle",
+            "description": "Test your vocabulary with this addictive word game",
+            "image": "images/word-puzzle.jpg",
+            "category": "Puzzle",
+            "url": "https://example.com/play/word-puzzle",
+            "featured": true
+        }
+    ]
+}
